@@ -11,14 +11,51 @@
     <header id="top">
       <h1>Prework Study Guide</h1>
       <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
+      <h2>✨ Open the Console to See What's Happening ✨</h2>
     </header>
     <main>
       <section class="card" id="html-section">
         <h2>HTML</h2>
         <ul>
           <li>HTML stands for Hypertext Markup Language and defines the structure and content of a web page.</li>
-          <li>The head element contains information about the webpage.</li>
-          <li>The body element represents the visible content shown to the user.</li>
+          <li>HTML is made up of <i>elements</i>. An <i>element</i> is a type of content on a webpage.</li>
+            <ul>
+              <li>The head element contains information about the webpage. The following metadata tags can be used inside the <i>head</i> element:</li>
+                <ul>
+                  <li>The <i>title</i> element defines the title for a webpage. It is required and important for Search Engine Optimization (SEO)</li>
+                  <li>The <i>style</i> element defines the base URL for a webpage.</li>
+                  <li>The <i>link</i> element connects an external resource to the HTML doc.</li>
+                  <li>The <i>meta</i> element defines metadata such as the character set, description, keywords, author, and viewport.</li>
+                  <li>The <i>script</i> element embeds client-side scripts in the HTML doc.</li>
+                </ul>
+              <li>The body element represents the visible content shown to the user.</li>
+                <ul>
+                  <li>The <i>h1</i>, <i>h2</i>, <i>h3</i>, <i>h4</i>, <i>h5</i>, and <i>h6</i> elements represent the level of heading a given text block represents.</li>
+                  <li>The <i>p</i> element represents a paragraph or block of text.</li>
+                  <li>The <i>ul</i>, <i>ol</i>, and <i>li</i> elements represent unordered lists, ordered lists, and list items. They represent bulleted or numbered lists.</li>
+                  <li>The <i>img</i> element contains info about images that are displayed on the webpage and can contain various attributes. The <i>src</i> attribute is the most important.</li>
+                  <li>The <i>br</i> element creates a line of empty space, or a line break, between two blocks of content.</li>
+                  <li>The <i>a</i> (anchor) element creates links to the same webpage or other webpages. The <i>href</i> <b>attribute</b> points to the URL for the link.</li>
+                  <li><i>Section</i> elements are semantic elements that define a section in a document that contains thematic content. This element can contain a <i>class</i> and <i>id</i> <b>attribute</b>.</li>
+
+                </ul>
+            </ul>
+          <li>Some commonly used element types are:</li>
+            <ul>
+              <li>Text elements</li>
+              <li>Image elements</li>
+              <li>Header elements</li>
+              <li>List elements</li>
+            </ul>
+          <li>There are also elements that are used to devide content on a page. Those commonly used are:</li>
+            <ul>
+              <li>Meta-related elements</li>
+              <li>Content division elements</li>
+              <li>Semantic elements</li>
+            </ul>
+          <li>Declarations are not case-sensitive, but HTML elements are. </li>
+          <li>An HTML attribute defines additional info about an element. Attributes are always defined in the beginning element, never the closing element.</li>
+
         </ul>
       </section>
 
@@ -63,6 +100,8 @@
           <li>git checkout main: Takes you back to the main branch.</li>
           <li>git add -A: Adds all modifications to the current branch.</li>
           <li>git commit -m: Creates a commit. The -m flag associates a message with the commit.</li>
+          <li>git pull origin main: pulls down the latest main branch from the remote repository and integrates it into the local repository.</li>
+          <li>git push origin branch-name: Pushes up the changes from the local repository to the remote repository.</li>
           <li>A commit captures a snapshot of the surrently staged changes.</li>
         </ul>
       </section>
@@ -70,7 +109,30 @@
       <section class="card" id="javascript-section">
         <h2>JavaScript</h2>
         <ul>
-          <li>Enter your JavaScript notes here.</li>
+          <li>JavaScript takes a static HTML/CSS webpage and makes it interactive.</li>
+          <li>A variable is a named container that allows us to store data in our code.</li>
+          <li>Control flow is the order in which a computer executes code in a script.</li>
+            <ul>
+              <li>Control flow can be interrupted. Conditional statements and loops can control the order in which code is executed, or if it is executed at all.</li>
+            </ul>
+          <li>The <i>const</i> keyword creates variables that can't be reassigned a value. It "locks down" the variable. It's followed by a variable name, an assignment operator, and the data to be stored. Always start by declaring varibles using this keyword when writing JavaScript.</li>
+          <li>The <i>let</i> keyword is also used for variable declaration.</li>
+          <li>The <i>function</i> keyword creates a function. A function is a set of instructions that tells the computer how to perform a certain task. 
+            <ul>
+              <li>However, just because it is declared <u>does not</u> mean the code will execute. Functions must be called for the code to execute. To call a function, use the name of the function where you want the code to execute.</li>
+            </ul>
+          <li>The <i>script</i> element that links the script.js file to the index.html file goes in the <i>body</i> element.</li>
+          <li>An <i>array</i> is a single variable that is used to hold a group of data. It can store different types of data like strings, numbers, etc. They are zero-indexed and sequential.</li>
+          <li>An <i>index</i> is the location number of data in an array. Also, arrays have a property called <i>length</i> which is equal to the number of items in the array.</li>
+          <li>A <i>for loop</i> uses the predictable pattern of indices to perform a task on all the items in an array by allowing a single code block to be executed over and over.</li>
+          <li>The <i>console.log</i> method can be used to output messages to the web console by adding an argument. It will output the value of the argument inside the parentheses to the web console. Ex: console.log(argument);</li>
+            <ul>
+              <li><b>Console</b> refers to a test environment used to check code. The second part <b>.log()</b>, means a set of instructions that can be executed by a computer.</li>
+            </ul>
+          <li>In an <i>if statement</i>, one or more conditions are provided for the computer to evaluate. If one contition is true, the code provided between the curly brackets will be executed. If the condition is false the code will not execute and will interrupt control flow.</li>
+            <ul>
+              <li><i>else if</i> can be used if more than one condition is needed.</li>
+            </ul>
         </ul>
       </section>
     </main>
@@ -78,5 +140,8 @@
     <footer>
       <p>I can code!</p>
     </footer>
+
+    <script src="./assets/script.js"></script>
+
   </body>
 </html>
